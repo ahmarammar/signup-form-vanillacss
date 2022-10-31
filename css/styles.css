@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* left section  */
+
+.container{
+  height: 100vh;
+  width: 100%;display: flex;
+}
+.sidebar{
+  width: 30%;
+  height: inherit;
+  background-image: url(../src/img/sidebar.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.logo{
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.493);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.logoImg{
+  height: 14vh;
+}
+.logoText{
+  text-transform: uppercase;
+  color: #f3f3f3;
+  font-size: 3.8rem;
+  font-family: 'Poor Story', cursive;
+  letter-spacing: 0.5rem;
+}
+
+
+/* right section  */
+.formSection{
+  background-color: #f1f1f1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inputSections{
+  display: flex;
+  gap: 10rem;
+}
+label{
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #525252;
+  margin-bottom: 0.2rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+.middleSection{
+  background-color: white;
+  padding: 1.3rem 4rem 3rem 4rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.075), 0 6px 20px 0 rgba(0, 0, 0, 0.062);
+}
+.middleSectionHeading{
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin-left: 0.1rem;
+}
+input{
+  width: 100%;
+  padding: 0.4rem 4rem 0.4rem 1rem;
+  outline: none;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 0.2rem;
+}
+.topSection{
+  padding: 2rem 4rem 4rem 4rem;
+}
+.topSectionHeadline{
+  font-size: 1.7rem;
+  width: 67%;
+  font-weight: 600;
+}
+.topSectionline{
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.bottomSection{
+  padding: 3rem 0 0 4rem;
+}
+.createButton{
+  padding: 1rem 4rem;
+  border: none;
+  background-color: rgb(28, 92, 56);
+  color: #f3f3f3;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.createButton:hover{
+  background-color: rgb(51, 99, 71);
+}
+.loginState{
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.01rem;
+  margin-top: 2rem;
+}
+a{
+  color: rgb(28, 92, 56);
+  text-decoration: none;
+}
+a:hover{
+  color : rgb(55, 92, 71);
+}
+input:focus:valid{
+  border: 1.1px solid darkgreen;
+}
+input:focus:invalid{
+  border: 1.1px solid red;
+}
+@media screen and (max-width : 1366px){
+  .sidebar{
+    width: 50%;
+  }
+  .inputSections{
+    gap: 5rem;
+  }
+}
+@media screen and (max-width : 966px){
+  .sidebar{
+    width: 70%;
+  }
+  .topSectionHeadline{
+    width: 100%;
+  }
+  .inputSections{
+    gap: 3rem;
+  }
+}
+@media screen and (max-width : 814px){
+  .container{
+    flex-direction: column;
+  }
+  .sidebar{
+    display: none;
+  }
+  .formSection{
+    height: 100vh;
+  }
+}
+@media screen and (max-width : 486px){
+  .topSectionHeadline{
+    font-size: 5.2vw;
+  }
+  .inputSections{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .createButton{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  .topSection{
+    padding: 2rem 2rem 3rem 2rem;
+  }
+}
