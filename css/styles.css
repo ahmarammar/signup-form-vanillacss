@@ -147,8 +147,17 @@ input:focus:invalid{
   }
 }
 @media screen and (max-height : 712px){
+  label{
+    margin-top: 1.7rem
+  }
+  .createButton{
+    margin-top: -10px;
+  }
   .topSectionline{
-    display: none;
+    font-size: 3vh;
+  }
+  .topSection{
+    padding: 6vh;
   }
 }
 @media screen and (max-width : 966px){
@@ -191,5 +200,11 @@ input:focus:invalid{
   }
   .topSection{
     padding: 2rem 2rem 3rem 2rem;
+  }
+  .topSectionHeadline{
+    display: inline;
+  }
+  .formSection{
+    overflow: scroll;
   }
 }
