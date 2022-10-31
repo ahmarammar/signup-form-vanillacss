@@ -46,6 +46,7 @@ body{
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .inputSections{
   display: flex;
@@ -134,6 +135,22 @@ input:focus:invalid{
     gap: 5rem;
   }
 }
+@media screen and (max-height : 872px){
+  .topSectionHeadline{
+    display: none;
+  }
+  .topSectionline::before{
+    content: '';
+  }
+  .topSectionline::after{
+    content: ' Just Sign it Up now.';
+  }
+}
+@media screen and (max-height : 712px){
+  .topSectionline{
+    display: none;
+  }
+}
 @media screen and (max-width : 966px){
   .sidebar{
     width: 70%;
@@ -155,10 +172,13 @@ input:focus:invalid{
   .formSection{
     height: 100vh;
   }
+  .bottomSection{
+    padding-bottom: 4rem;
+  }
 }
 @media screen and (max-width : 486px){
   .topSectionHeadline{
-    font-size: 5.2vw;
+    font-size: 4vw;
   }
   .inputSections{
     display: flex;
