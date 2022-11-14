@@ -1,2 +1,2 @@
-# top-signup-form-vanillacss
-Sign up form using Vanilla CSS.
+# signup-form-vanillacss
+Sign up form frontend using Vanilla CSS.
