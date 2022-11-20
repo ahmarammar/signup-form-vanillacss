@@ -6,8 +6,9 @@ body{
 /* left section  */
 
 .container{
-  height: 100vh;
-  width: 100%;display: flex;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
 }
 .sidebar{
   width: 30%;
@@ -29,6 +30,7 @@ body{
   gap: 1rem;
 }
 .logoImg{
+  min-height: 5rem;
   height: 14vh;
 }
 .logoText{
@@ -154,7 +156,7 @@ input:focus:invalid{
     margin-top: -10px;
   }
   .topSectionline{
-    font-size: 3vh;
+    font-size: 2rem;
   }
   .topSection{
     padding: 6vh;
@@ -179,7 +181,7 @@ input:focus:invalid{
     display: none;
   }
   .formSection{
-    height: 100vh;
+    min-height: 100vh;
   }
   .bottomSection{
     padding-bottom: 4rem;
